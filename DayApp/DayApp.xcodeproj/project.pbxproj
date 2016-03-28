@@ -107,12 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				EB7C82021CA9E7BA00A521F2 /* DayApp */,
+				EB7C82411CA9E91B00A521F2 /* Controllers */,
 				EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */,
 				EB7C82251CA9E7BA00A521F2 /* DayApp WatchKit Extension */,
 				EB7C82011CA9E7BA00A521F2 /* Products */,
 				EB7C82401CA9E8AB00A521F2 /* Internals */,
 				EB7C823F1CA9E88600A521F2 /* Images */,
-				EB7C82411CA9E91B00A521F2 /* Controllers */,
 			);
 			sourceTree = "<group>";
 		};
