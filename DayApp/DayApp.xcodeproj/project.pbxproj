@@ -66,12 +66,12 @@
 
 /* Begin PBXFileReference section */
 		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DayApp/AppDelegate.swift; sourceTree = "<group>"; };
 		EB7C82051CA9E7BA00A521F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7C82081CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DayApp/Assets.xcassets; sourceTree = "<group>"; };
 		EB7C820D1CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EB7C820F1CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7C820F1CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DayApp/Info.plist; sourceTree = "<group>"; };
 		EB7C82121CA9E7BA00A521F2 /* DayApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C82181CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EB7C821A1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +110,8 @@
 				EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */,
 				EB7C82251CA9E7BA00A521F2 /* DayApp WatchKit Extension */,
 				EB7C82011CA9E7BA00A521F2 /* Products */,
+				EB7C82401CA9E8AB00A521F2 /* Internals */,
+				EB7C823F1CA9E88600A521F2 /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,12 +128,7 @@
 		EB7C82021CA9E7BA00A521F2 /* DayApp */ = {
 			isa = PBXGroup;
 			children = (
-				EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */,
-				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
-				EB7C82071CA9E7BA00A521F2 /* Main.storyboard */,
-				EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */,
-				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
-				EB7C820F1CA9E7BA00A521F2 /* Info.plist */,
+				EB7C823E1CA9E83600A521F2 /* Storyboard */,
 			);
 			path = DayApp;
 			sourceTree = "<group>";
@@ -165,6 +162,33 @@
 				EB7C82271CA9E7BA00A521F2 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB7C823E1CA9E83600A521F2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
+				EB7C82071CA9E7BA00A521F2 /* Main.storyboard */,
+				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		EB7C823F1CA9E88600A521F2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EB7C82401CA9E8AB00A521F2 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */,
+				EB7C820F1CA9E7BA00A521F2 /* Info.plist */,
+			);
+			name = Internals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
