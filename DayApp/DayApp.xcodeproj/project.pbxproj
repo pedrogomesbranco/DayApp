@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */; };
+		EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82051CA9E7BA00A521F2 /* ViewController.swift */; };
+		EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82071CA9E7BA00A521F2 /* Main.storyboard */; };
+		EB7C820B1CA9E7BA00A521F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */; };
+		EB7C820E1CA9E7BA00A521F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */; };
+		EB7C82131CA9E7BA00A521F2 /* DayApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB7C82121CA9E7BA00A521F2 /* DayApp WatchKit App.app */; };
+		EB7C82191CA9E7BA00A521F2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82171CA9E7BA00A521F2 /* Interface.storyboard */; };
+		EB7C821B1CA9E7BA00A521F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C821A1CA9E7BA00A521F2 /* Assets.xcassets */; };
+		EB7C82221CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB7C82211CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB7C82291CA9E7BA00A521F2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82281CA9E7BA00A521F2 /* InterfaceController.swift */; };
+		EB7C822B1CA9E7BA00A521F2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C822A1CA9E7BA00A521F2 /* ExtensionDelegate.swift */; };
+		EB7C822D1CA9E7BA00A521F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C822C1CA9E7BA00A521F2 /* NotificationController.swift */; };
+		EB7C822F1CA9E7BA00A521F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB7C82141CA9E7BA00A521F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB7C81F81CA9E7BA00A521F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB7C82111CA9E7BA00A521F2;
+			remoteInfo = "DayApp WatchKit App";
+		};
+		EB7C82231CA9E7BA00A521F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB7C81F81CA9E7BA00A521F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB7C82201CA9E7BA00A521F2;
+			remoteInfo = "DayApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB7C82361CA9E7BA00A521F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB7C82221CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C823A1CA9E7BA00A521F2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB7C82131CA9E7BA00A521F2 /* DayApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB7C82051CA9E7BA00A521F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB7C82081CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB7C820D1CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB7C820F1CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7C82121CA9E7BA00A521F2 /* DayApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7C82181CA9E7BA00A521F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EB7C821A1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB7C821C1CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7C82211CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DayApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7C82271CA9E7BA00A521F2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EB7C82281CA9E7BA00A521F2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EB7C822A1CA9E7BA00A521F2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EB7C822C1CA9E7BA00A521F2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB7C82301CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB7C81FD1CA9E7BA00A521F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C821E1CA9E7BA00A521F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB7C81F71CA9E7BA00A521F2 = {
+			isa = PBXGroup;
+			children = (
+				EB7C82021CA9E7BA00A521F2 /* DayApp */,
+				EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */,
+				EB7C82251CA9E7BA00A521F2 /* DayApp WatchKit Extension */,
+				EB7C82011CA9E7BA00A521F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB7C82011CA9E7BA00A521F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82001CA9E7BA00A521F2 /* DayApp.app */,
+				EB7C82121CA9E7BA00A521F2 /* DayApp WatchKit App.app */,
+				EB7C82211CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB7C82021CA9E7BA00A521F2 /* DayApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */,
+				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+				EB7C82071CA9E7BA00A521F2 /* Main.storyboard */,
+				EB7C820A1CA9E7BA00A521F2 /* Assets.xcassets */,
+				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
+				EB7C820F1CA9E7BA00A521F2 /* Info.plist */,
+			);
+			path = DayApp;
+			sourceTree = "<group>";
+		};
+		EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82171CA9E7BA00A521F2 /* Interface.storyboard */,
+				EB7C821A1CA9E7BA00A521F2 /* Assets.xcassets */,
+				EB7C821C1CA9E7BA00A521F2 /* Info.plist */,
+			);
+			path = "DayApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		EB7C82251CA9E7BA00A521F2 /* DayApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82281CA9E7BA00A521F2 /* InterfaceController.swift */,
+				EB7C822A1CA9E7BA00A521F2 /* ExtensionDelegate.swift */,
+				EB7C822C1CA9E7BA00A521F2 /* NotificationController.swift */,
+				EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */,
+				EB7C82301CA9E7BA00A521F2 /* Info.plist */,
+				EB7C82261CA9E7BA00A521F2 /* Supporting Files */,
+			);
+			path = "DayApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EB7C82261CA9E7BA00A521F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82271CA9E7BA00A521F2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB7C81FF1CA9E7BA00A521F2 /* DayApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7C823B1CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp" */;
+			buildPhases = (
+				EB7C81FC1CA9E7BA00A521F2 /* Sources */,
+				EB7C81FD1CA9E7BA00A521F2 /* Frameworks */,
+				EB7C81FE1CA9E7BA00A521F2 /* Resources */,
+				EB7C823A1CA9E7BA00A521F2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB7C82151CA9E7BA00A521F2 /* PBXTargetDependency */,
+			);
+			name = DayApp;
+			productName = DayApp;
+			productReference = EB7C82001CA9E7BA00A521F2 /* DayApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB7C82111CA9E7BA00A521F2 /* DayApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7C82371CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp WatchKit App" */;
+			buildPhases = (
+				EB7C82101CA9E7BA00A521F2 /* Resources */,
+				EB7C82361CA9E7BA00A521F2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB7C82241CA9E7BA00A521F2 /* PBXTargetDependency */,
+			);
+			name = "DayApp WatchKit App";
+			productName = "DayApp WatchKit App";
+			productReference = EB7C82121CA9E7BA00A521F2 /* DayApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB7C82201CA9E7BA00A521F2 /* DayApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7C82331CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp WatchKit Extension" */;
+			buildPhases = (
+				EB7C821D1CA9E7BA00A521F2 /* Sources */,
+				EB7C821E1CA9E7BA00A521F2 /* Frameworks */,
+				EB7C821F1CA9E7BA00A521F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DayApp WatchKit Extension";
+			productName = "DayApp WatchKit Extension";
+			productReference = EB7C82211CA9E7BA00A521F2 /* DayApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB7C81F81CA9E7BA00A521F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pedro G. Branco";
+				TargetAttributes = {
+					EB7C81FF1CA9E7BA00A521F2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EB7C82111CA9E7BA00A521F2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EB7C82201CA9E7BA00A521F2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = EB7C81FB1CA9E7BA00A521F2 /* Build configuration list for PBXProject "DayApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB7C81F71CA9E7BA00A521F2;
+			productRefGroup = EB7C82011CA9E7BA00A521F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB7C81FF1CA9E7BA00A521F2 /* DayApp */,
+				EB7C82111CA9E7BA00A521F2 /* DayApp WatchKit App */,
+				EB7C82201CA9E7BA00A521F2 /* DayApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB7C81FE1CA9E7BA00A521F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C820E1CA9E7BA00A521F2 /* LaunchScreen.storyboard in Resources */,
+				EB7C820B1CA9E7BA00A521F2 /* Assets.xcassets in Resources */,
+				EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C82101CA9E7BA00A521F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C821B1CA9E7BA00A521F2 /* Assets.xcassets in Resources */,
+				EB7C82191CA9E7BA00A521F2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C821F1CA9E7BA00A521F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C822F1CA9E7BA00A521F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB7C81FC1CA9E7BA00A521F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */,
+				EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C821D1CA9E7BA00A521F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C822D1CA9E7BA00A521F2 /* NotificationController.swift in Sources */,
+				EB7C822B1CA9E7BA00A521F2 /* ExtensionDelegate.swift in Sources */,
+				EB7C82291CA9E7BA00A521F2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB7C82151CA9E7BA00A521F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB7C82111CA9E7BA00A521F2 /* DayApp WatchKit App */;
+			targetProxy = EB7C82141CA9E7BA00A521F2 /* PBXContainerItemProxy */;
+		};
+		EB7C82241CA9E7BA00A521F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB7C82201CA9E7BA00A521F2 /* DayApp WatchKit Extension */;
+			targetProxy = EB7C82231CA9E7BA00A521F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB7C82071CA9E7BA00A521F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C82081CA9E7BA00A521F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C820D1CA9E7BA00A521F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB7C82171CA9E7BA00A521F2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C82181CA9E7BA00A521F2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB7C82311CA9E7BA00A521F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB7C82321CA9E7BA00A521F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB7C82341CA9E7BA00A521F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DayApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EB7C82351CA9E7BA00A521F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DayApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		EB7C82381CA9E7BA00A521F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DayApp_WatchKit_Extension;
+				INFOPLIST_FILE = "DayApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EB7C82391CA9E7BA00A521F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DayApp_WatchKit_Extension;
+				INFOPLIST_FILE = "DayApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		EB7C823C1CA9E7BA00A521F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DayApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB7C823D1CA9E7BA00A521F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DayApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB7C81FB1CA9E7BA00A521F2 /* Build configuration list for PBXProject "DayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C82311CA9E7BA00A521F2 /* Debug */,
+				EB7C82321CA9E7BA00A521F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB7C82331CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C82341CA9E7BA00A521F2 /* Debug */,
+				EB7C82351CA9E7BA00A521F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB7C82371CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C82381CA9E7BA00A521F2 /* Debug */,
+				EB7C82391CA9E7BA00A521F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB7C823B1CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C823C1CA9E7BA00A521F2 /* Debug */,
+				EB7C823D1CA9E7BA00A521F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB7C81F81CA9E7BA00A521F2 /* Project object */;
+}
