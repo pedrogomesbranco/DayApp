@@ -14,9 +14,4 @@ class Cell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var cash: UILabel!
     
-    var imagem: UIImage!
-    var nome: String!
-    var price: String!
-    
-    
 }
