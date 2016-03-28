@@ -25,9 +25,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 6
     }
     
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! Cell
-        cell.image.image = UIColor.randomColor()
+        cell.image.image = UIImage(named:"perfil")
         cell.name.text = "Pedro Gomes"
         cell.cash.text = "R$ 50,00"
         return cell
