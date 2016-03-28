@@ -20,6 +20,7 @@
 		EB7C822B1CA9E7BA00A521F2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C822A1CA9E7BA00A521F2 /* ExtensionDelegate.swift */; };
 		EB7C822D1CA9E7BA00A521F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C822C1CA9E7BA00A521F2 /* NotificationController.swift */; };
 		EB7C822F1CA9E7BA00A521F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */; };
+		EB7C82431CA9ED1300A521F2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82421CA9ED1300A521F2 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		EB7C822C1CA9E7BA00A521F2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7C82301CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7C82421CA9ED1300A521F2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+				EB7C82421CA9ED1300A521F2 /* Cell.swift */,
 			);
 			name = Controllers;
 			path = DayApp;
@@ -334,6 +337,7 @@
 			files = (
 				EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */,
 				EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */,
+				EB7C82431CA9ED1300A521F2 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
