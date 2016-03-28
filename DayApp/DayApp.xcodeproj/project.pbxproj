@@ -112,6 +112,7 @@
 				EB7C82011CA9E7BA00A521F2 /* Products */,
 				EB7C82401CA9E8AB00A521F2 /* Internals */,
 				EB7C823F1CA9E88600A521F2 /* Images */,
+				EB7C82411CA9E91B00A521F2 /* Controllers */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +168,8 @@
 		EB7C823E1CA9E83600A521F2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
 				EB7C82071CA9E7BA00A521F2 /* Main.storyboard */,
-				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -189,6 +189,15 @@
 				EB7C820F1CA9E7BA00A521F2 /* Info.plist */,
 			);
 			name = Internals;
+			sourceTree = "<group>";
+		};
+		EB7C82411CA9E91B00A521F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = DayApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
