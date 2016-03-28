@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB6EC6701CA9F0C800382DBD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6EC66F1CA9F0C800382DBD /* CloudKit.framework */; };
 		EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */; };
 		EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82051CA9E7BA00A521F2 /* ViewController.swift */; };
 		EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82071CA9E7BA00A521F2 /* Main.storyboard */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DayApp.entitlements; sourceTree = "<group>"; };
+		EB6EC66F1CA9F0C800382DBD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DayApp/AppDelegate.swift; sourceTree = "<group>"; };
 		EB7C82051CA9E7BA00A521F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6EC6701CA9F0C800382DBD /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 		EB7C81F71CA9E7BA00A521F2 = {
 			isa = PBXGroup;
 			children = (
+				EB6EC66F1CA9F0C800382DBD /* CloudKit.framework */,
 				EB7C82021CA9E7BA00A521F2 /* DayApp */,
 				EB7C82411CA9E91B00A521F2 /* Controllers */,
 				EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */,
@@ -131,6 +136,7 @@
 		EB7C82021CA9E7BA00A521F2 /* DayApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */,
 				EB7C823E1CA9E83600A521F2 /* Storyboard */,
 			);
 			path = DayApp;
@@ -271,6 +277,12 @@
 				TargetAttributes = {
 					EB7C81FF1CA9E7BA00A521F2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 92E4YSM59Z;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					EB7C82111CA9E7BA00A521F2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -541,6 +553,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
@@ -552,6 +566,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
@@ -578,6 +594,7 @@
 				EB7C82351CA9E7BA00A521F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB7C82371CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +603,7 @@
 				EB7C82391CA9E7BA00A521F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB7C823B1CA9E7BA00A521F2 /* Build configuration list for PBXNativeTarget "DayApp" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +612,7 @@
 				EB7C823D1CA9E7BA00A521F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
