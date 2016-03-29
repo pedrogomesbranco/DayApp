@@ -15,7 +15,10 @@
                         <viewControllerLayoutGuide type="bottom" id="X6f-Zv-u0w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7G3-Rx-xHj">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -400,6 +403,12 @@
                                 <exclude reference="rLZ-SC-acr"/>
                                 <exclude reference="vFa-ip-9g4"/>
                                 <exclude reference="yM7-uU-xH3"/>
+<<<<<<< HEAD
+=======
+                                <exclude reference="BYe-q6-q9e"/>
+                                <exclude reference="DCk-Cz-KfQ"/>
+                                <exclude reference="yS9-jm-TKq"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <exclude reference="zr6-tk-Vzw"/>
                             </mask>
                         </variation>
@@ -426,6 +435,12 @@
                                 <exclude reference="rLZ-SC-acr"/>
                                 <exclude reference="vFa-ip-9g4"/>
                                 <include reference="yM7-uU-xH3"/>
+<<<<<<< HEAD
+=======
+                                <include reference="BYe-q6-q9e"/>
+                                <include reference="DCk-Cz-KfQ"/>
+                                <include reference="yS9-jm-TKq"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <include reference="zr6-tk-Vzw"/>
                             </mask>
                         </variation>
@@ -449,7 +464,10 @@
                         <viewControllerLayoutGuide type="bottom" id="6nn-pP-D19"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nWz-HN-f0l">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -467,7 +485,10 @@
                         <viewControllerLayoutGuide type="bottom" id="gWd-xQ-VWM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0RB-dA-Xkk">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-6V-7wP">
@@ -556,7 +577,10 @@
                         <viewControllerLayoutGuide type="bottom" id="brT-x8-vAQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LKP-xC-1GP">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obY-DI-Wyz">
@@ -583,7 +607,11 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.047058823530000002" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+<<<<<<< HEAD
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="204" y="541" width="184" height="39"/>
@@ -593,7 +621,11 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.6588235294" green="0.6588235294" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+<<<<<<< HEAD
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="541" width="183" height="39"/>
