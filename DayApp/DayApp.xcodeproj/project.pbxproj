@@ -23,6 +23,9 @@
 		EB7C822F1CA9E7BA00A521F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C822E1CA9E7BA00A521F2 /* Assets.xcassets */; };
 		EB7C82431CA9ED1300A521F2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82421CA9ED1300A521F2 /* Cell.swift */; };
 		EB7C82451CA9F96600A521F2 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82441CA9F96600A521F2 /* RoundedCornersView.swift */; };
+		EBC90EC71CAB122300A9A2B0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC90EC61CAB122300A9A2B0 /* FBSDKCoreKit.framework */; };
+		EBC90EC91CAB122D00A9A2B0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC90EC81CAB122D00A9A2B0 /* FBSDKLoginKit.framework */; };
+		EBC90ECB1CAB123800A9A2B0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC90ECA1CAB123800A9A2B0 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,10 @@
 		EB7C82301CA9E7BA00A521F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB7C82421CA9ED1300A521F2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		EB7C82441CA9F96600A521F2 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		EBC90EC61CAB122300A9A2B0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		EBC90EC81CAB122D00A9A2B0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		EBC90ECA1CAB123800A9A2B0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		EBC90ECD1CAB189700A9A2B0 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC90ECB1CAB123800A9A2B0 /* FBSDKShareKit.framework in Frameworks */,
 				241955C51CAB0D2100C48B8A /* CloudKit.framework in Frameworks */,
+				EBC90EC71CAB122300A9A2B0 /* FBSDKCoreKit.framework in Frameworks */,
+				EBC90EC91CAB122D00A9A2B0 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +124,9 @@
 		EB7C81F71CA9E7BA00A521F2 = {
 			isa = PBXGroup;
 			children = (
+				EBC90ECA1CAB123800A9A2B0 /* FBSDKShareKit.framework */,
+				EBC90EC81CAB122D00A9A2B0 /* FBSDKLoginKit.framework */,
+				EBC90EC61CAB122300A9A2B0 /* FBSDKCoreKit.framework */,
 				241955C41CAB0D2100C48B8A /* CloudKit.framework */,
 				EB7C82021CA9E7BA00A521F2 /* DayApp */,
 				EB7C82411CA9E91B00A521F2 /* Controllers */,
@@ -138,6 +151,7 @@
 		EB7C82021CA9E7BA00A521F2 /* DayApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBC90ECD1CAB189700A9A2B0 /* Bridging-Header.h */,
 				EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */,
 				EB7C823E1CA9E83600A521F2 /* Storyboard */,
 			);
@@ -560,11 +574,17 @@
 				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -575,11 +595,17 @@
 				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
