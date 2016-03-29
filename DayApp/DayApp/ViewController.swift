@@ -26,12 +26,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 16
+        return 10
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! Cell
-        cell.image.image = UIImage(named:"perfil")
+        cell.image.image = UIImage(named:"sapato")
         cell.name.text = "Pedro Gomes"
         cell.cash.text = "R$ 50,00"
         return cell
