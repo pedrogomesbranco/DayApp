@@ -6,6 +6,27 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="xaV-0N-qmx">
+            <objects>
+                <viewController id="gQd-3z-EnL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JKh-Xf-Hs1"/>
+                        <viewControllerLayoutGuide type="bottom" id="X6f-Zv-u0w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7G3-Rx-xHj">
+<<<<<<< HEAD
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdi-5x-UbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="-254"/>
+        </scene>
         <!--Social Wallet-->
         <scene sceneID="sJq-fv-ahG">
             <objects>
@@ -24,137 +45,110 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-IL-Jel">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pontodamassa" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-At-pGB">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="123" y="5" width="15" height="45"/>
-                                        </variation>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pontodamassa" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-8I-RyI">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="251" y="5" width="15" height="45"/>
-                                        </variation>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-NY-iCc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-AS-fU1">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="8" width="39" height="21"/>
+                                            <rect key="frame" x="91" y="15" width="48" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A receber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w2-Zw-05y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A receber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-g6-yN2">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="146" y="7" width="75" height="21"/>
+                                            <rect key="frame" x="187" y="15" width="82" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-XT-fge">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpR-5D-dgv">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.90196078431372551" green="0.23529411764705882" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
+                                        <state key="normal" title="RS50,00">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.047058823530000002" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="26" width="95" height="21"/>
+                                            <rect key="frame" x="82" y="19" width="85" height="46"/>
                                         </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$50,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgN-B5-mkK">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1I-NI-ghE">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.21960784310000001" green="0.70588235290000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
+                                        <state key="normal" title="RS50,00">
+                                            <color key="titleColor" red="0.072276553791070022" green="0.61528445512820507" blue="0.17401866781053135" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="146" y="26" width="97" height="21"/>
+                                            <rect key="frame" x="175" y="21" width="88" height="43"/>
                                         </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$50,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-O6-9N5">
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2F-ji-k9X">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="278" y="26" width="114" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrinha" translatesAutoresizingMaskIntoConstraints="NO" id="tAT-AP-Ieu">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="256" y="49" width="144" height="6"/>
-                                        </variation>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-yc-Ngb">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="278" y="7" width="38" height="21"/>
+                                            <rect key="frame" x="300" y="15" width="50" height="21"/>
                                         </variation>
                                     </label>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrinha" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-G6-N3P">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pontodamassa" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-8I-RyI">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="49" width="130" height="6"/>
+                                            <rect key="frame" x="278" y="3" width="15" height="60"/>
                                         </variation>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU1-Zq-xz0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoA-wv-4Gi">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="oval"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="256" y="0.0" width="144" height="55"/>
+                                            <rect key="frame" x="16" y="5" width="55" height="55"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="gQd-3z-EnL" kind="show" id="VSR-32-fdi"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nb-6B-ePy">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pontodamassa" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-At-pGB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="128" y="0.0" width="128" height="55"/>
+                                            <rect key="frame" x="162" y="3" width="15" height="60"/>
                                         </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMa-3u-J1y">
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByS-IC-AZV">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="RS50,00"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="130" height="55"/>
+                                            <rect key="frame" x="292" y="15" width="85" height="54"/>
                                         </variation>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="6bq-At-pGB"/>
+                                        <exclude reference="dao-AS-fU1"/>
+                                        <exclude reference="xUA-g6-yN2"/>
+                                        <exclude reference="IpR-5D-dgv"/>
+                                        <exclude reference="T1I-NI-ghE"/>
+                                        <exclude reference="X2F-ji-k9X"/>
                                         <exclude reference="YQS-8I-RyI"/>
-                                        <exclude reference="vIl-NY-iCc"/>
-                                        <exclude reference="3w2-Zw-05y"/>
-                                        <exclude reference="EVF-XT-fge"/>
-                                        <exclude reference="UgN-B5-mkK"/>
-                                        <exclude reference="1Oh-O6-9N5"/>
-                                        <exclude reference="tAT-AP-Ieu"/>
-                                        <exclude reference="AVy-yc-Ngb"/>
-                                        <exclude reference="gbE-G6-N3P"/>
-                                        <exclude reference="qU1-Zq-xz0"/>
-                                        <exclude reference="6Nb-6B-ePy"/>
-                                        <exclude reference="VMa-3u-J1y"/>
+                                        <exclude reference="WoA-wv-4Gi"/>
+                                        <exclude reference="6bq-At-pGB"/>
+                                        <exclude reference="ByS-IC-AZV"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="55"/>
+                                    <rect key="frame" x="0.0" y="64" width="400" height="64"/>
                                     <mask key="subviews">
-                                        <include reference="6bq-At-pGB"/>
+                                        <include reference="dao-AS-fU1"/>
+                                        <include reference="xUA-g6-yN2"/>
+                                        <include reference="IpR-5D-dgv"/>
+                                        <include reference="T1I-NI-ghE"/>
+                                        <include reference="X2F-ji-k9X"/>
                                         <include reference="YQS-8I-RyI"/>
-                                        <include reference="vIl-NY-iCc"/>
-                                        <include reference="3w2-Zw-05y"/>
-                                        <include reference="EVF-XT-fge"/>
-                                        <include reference="UgN-B5-mkK"/>
-                                        <include reference="1Oh-O6-9N5"/>
-                                        <include reference="tAT-AP-Ieu"/>
-                                        <include reference="AVy-yc-Ngb"/>
-                                        <include reference="gbE-G6-N3P"/>
-                                        <include reference="qU1-Zq-xz0"/>
-                                        <include reference="6Nb-6B-ePy"/>
-                                        <include reference="VMa-3u-J1y"/>
+                                        <include reference="WoA-wv-4Gi"/>
+                                        <include reference="6bq-At-pGB"/>
+                                        <include reference="ByS-IC-AZV"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -357,12 +351,6 @@
                                     <segue destination="Hx5-kf-Zz6" kind="show" id="3wK-4J-bB5"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrinha" translatesAutoresizingMaskIntoConstraints="NO" id="ITP-or-2tZ">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="129" y="113" width="129" height="6"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -371,7 +359,7 @@
                             <constraint firstItem="QM7-sb-99o" firstAttribute="centerX" secondItem="s3x-4F-ExG" secondAttribute="centerX" id="BYe-q6-q9e"/>
                             <constraint firstAttribute="bottom" secondItem="QM7-sb-99o" secondAttribute="bottom" id="DCk-Cz-KfQ"/>
                             <constraint firstItem="j2v-IM-wvo" firstAttribute="top" secondItem="yS6-q2-QfB" secondAttribute="bottom" constant="130" id="JLI-dT-iEY">
-                                <variation key="widthClass=compact" constant="63"/>
+                                <variation key="widthClass=compact" constant="73"/>
                             </constraint>
                             <constraint firstItem="j2v-IM-wvo" firstAttribute="top" secondItem="s3x-4F-ExG" secondAttribute="top" constant="25" id="P38-1o-p3g">
                                 <variation key="widthClass=compact" constant="-25"/>
@@ -399,7 +387,6 @@
                                 <exclude reference="j2v-IM-wvo"/>
                                 <exclude reference="fOn-WI-VGh"/>
                                 <exclude reference="OIC-DK-FXe"/>
-                                <exclude reference="ITP-or-2tZ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="6pT-oq-DIK"/>
@@ -416,6 +403,12 @@
                                 <exclude reference="rLZ-SC-acr"/>
                                 <exclude reference="vFa-ip-9g4"/>
                                 <exclude reference="yM7-uU-xH3"/>
+<<<<<<< HEAD
+=======
+                                <exclude reference="BYe-q6-q9e"/>
+                                <exclude reference="DCk-Cz-KfQ"/>
+                                <exclude reference="yS9-jm-TKq"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <exclude reference="zr6-tk-Vzw"/>
                             </mask>
                         </variation>
@@ -426,7 +419,6 @@
                                 <include reference="j2v-IM-wvo"/>
                                 <include reference="fOn-WI-VGh"/>
                                 <include reference="OIC-DK-FXe"/>
-                                <include reference="ITP-or-2tZ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="6pT-oq-DIK"/>
@@ -443,23 +435,17 @@
                                 <exclude reference="rLZ-SC-acr"/>
                                 <exclude reference="vFa-ip-9g4"/>
                                 <include reference="yM7-uU-xH3"/>
+<<<<<<< HEAD
+=======
+                                <include reference="BYe-q6-q9e"/>
+                                <include reference="DCk-Cz-KfQ"/>
+                                <include reference="yS9-jm-TKq"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <include reference="zr6-tk-Vzw"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Social Wallet" id="lGZ-Su-wye">
-                        <barButtonItem key="rightBarButtonItem" style="done" id="24k-rU-Jik">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qna-96-deG">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" image="account-2"/>
-                                <connections>
-                                    <segue destination="kiC-8Z-oe6" kind="show" id="G3E-H3-ybC"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Social Wallet" id="lGZ-Su-wye"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <segue destination="rQz-z5-i2n" kind="show" id="3wQ-kn-tAs"/>
@@ -470,23 +456,6 @@
             <point key="canvasLocation" x="459" y="420"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="l8i-aX-LyX">
-            <objects>
-                <viewController id="kiC-8Z-oe6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="74j-0p-Tui"/>
-                        <viewControllerLayoutGuide type="bottom" id="o6c-fa-4s5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HLA-SL-CjM">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nJD-Fu-LKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="460.5" y="-229"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="Z8Y-NK-Ydb">
             <objects>
                 <viewController id="rQz-z5-i2n" sceneMemberID="viewController">
@@ -495,7 +464,10 @@
                         <viewControllerLayoutGuide type="bottom" id="6nn-pP-D19"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nWz-HN-f0l">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -513,7 +485,10 @@
                         <viewControllerLayoutGuide type="bottom" id="gWd-xQ-VWM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0RB-dA-Xkk">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-6V-7wP">
@@ -602,7 +577,10 @@
                         <viewControllerLayoutGuide type="bottom" id="brT-x8-vAQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LKP-xC-1GP">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obY-DI-Wyz">
@@ -629,7 +607,11 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.047058823530000002" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+<<<<<<< HEAD
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="204" y="541" width="184" height="39"/>
@@ -639,7 +621,11 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.6588235294" green="0.6588235294" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+<<<<<<< HEAD
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d96abfc11739631f30c9a67bd7e49bcab6fffa85
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="541" width="183" height="39"/>
@@ -680,7 +666,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
@@ -694,9 +679,8 @@
     </scenes>
     <resources>
         <image name="Rectangle 172" width="375" height="161"/>
-        <image name="account-2" width="22" height="22"/>
-        <image name="barrinha" width="124" height="5"/>
         <image name="gogogo" width="241" height="108"/>
+        <image name="oval" width="68" height="68"/>
         <image name="pontodamassa" width="116" height="498"/>
         <image name="sapato" width="752" height="562"/>
         <image name="sombra" width="151" height="84"/>

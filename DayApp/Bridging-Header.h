@@ -10,4 +10,12 @@
 #define Bridging_Header_h
 
 
+#ifndef FacebookTutorial_Bridging_Header_h
+#define FacebookTutorial_Bridging_Header_h
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+#endif
+
+
 #endif /* Bridging_Header_h */
