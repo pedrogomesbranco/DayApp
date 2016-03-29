@@ -13,5 +13,6 @@ class Cell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var cash: UILabel!
+    @IBOutlet private weak var imageViewHeightLayoutConstraint: NSLayoutConstraint!
     
 }
