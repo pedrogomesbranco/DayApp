@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241955C51CAB0D2100C48B8A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241955C41CAB0D2100C48B8A /* CloudKit.framework */; };
 		EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */; };
 		EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82051CA9E7BA00A521F2 /* ViewController.swift */; };
 		EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82071CA9E7BA00A521F2 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		241955C41CAB0D2100C48B8A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DayApp.entitlements; sourceTree = "<group>"; };
 		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DayApp/AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241955C51CAB0D2100C48B8A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +114,7 @@
 		EB7C81F71CA9E7BA00A521F2 = {
 			isa = PBXGroup;
 			children = (
+				241955C41CAB0D2100C48B8A /* CloudKit.framework */,
 				EB7C82021CA9E7BA00A521F2 /* DayApp */,
 				EB7C82411CA9E91B00A521F2 /* Controllers */,
 				EB7C82161CA9E7BA00A521F2 /* DayApp WatchKit App */,
@@ -276,10 +280,10 @@
 				TargetAttributes = {
 					EB7C81FF1CA9E7BA00A521F2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Y93WP7899G;
+						DevelopmentTeam = 92E4YSM59Z;
 						SystemCapabilities = {
 							com.apple.iCloud = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -553,11 +557,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -565,11 +572,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayApp/DayApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.DayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
