@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		241955C51CAB0D2100C48B8A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241955C41CAB0D2100C48B8A /* CloudKit.framework */; };
 		241955C81CAB3ED800C48B8A /* class_aux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241955C71CAB3ED800C48B8A /* class_aux.swift */; };
+		248644B51CAC606A00F71E6E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248644B41CAC606A00F71E6E /* Friend.swift */; };
+		248644B71CAC6C7700F71E6E /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248644B61CAC6C7700F71E6E /* Perfil.swift */; };
 		EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */; };
 		EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82051CA9E7BA00A521F2 /* ViewController.swift */; };
 		EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82071CA9E7BA00A521F2 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 /* Begin PBXFileReference section */
 		241955C41CAB0D2100C48B8A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		241955C71CAB3ED800C48B8A /* class_aux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = class_aux.swift; sourceTree = "<group>"; };
+		248644B41CAC606A00F71E6E /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		248644B61CAC6C7700F71E6E /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DayApp.entitlements; sourceTree = "<group>"; };
 		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DayApp/AppDelegate.swift; sourceTree = "<group>"; };
@@ -231,7 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
+				248644B41CAC606A00F71E6E /* Friend.swift */,
 				EB7C82441CA9F96600A521F2 /* RoundedCornersView.swift */,
+				248644B61CAC6C7700F71E6E /* Perfil.swift */,
 				EB7C82421CA9ED1300A521F2 /* Cell.swift */,
 			);
 			name = Controllers;
@@ -377,8 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				241955C81CAB3ED800C48B8A /* class_aux.swift in Sources */,
+				248644B71CAC6C7700F71E6E /* Perfil.swift in Sources */,
 				EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */,
 				EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */,
+				248644B51CAC606A00F71E6E /* Friend.swift in Sources */,
 				EB7C82431CA9ED1300A521F2 /* Cell.swift in Sources */,
 				EB7C82451CA9F96600A521F2 /* RoundedCornersView.swift in Sources */,
 			);
