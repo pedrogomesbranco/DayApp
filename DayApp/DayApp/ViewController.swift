@@ -48,7 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         pessoasTot = pessoas
 
-        for var p in 0...pessoas.count-1{
+        for p in 0...pessoas.count-1{
             let t = Int(pessoas[p].historico_user["Isabella Slawka"]!)
             if(t < 0){
                 dev = dev + t!*(-1)
@@ -100,11 +100,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let i = Int(pessoas[indexPath.item].historico_user["Isabella Slawka"]!)
         
         if(i < 0){
-            cell.cash.text = "- R$\(Int(pessoas[indexPath.item].historico_user["Isabella Slawka"]!)! * -1),00"
+            cell.cash.text = "- R$ \(Int(pessoas[indexPath.item].historico_user["Isabella Slawka"]!)! * -1),00"
             cell.cash.backgroundColor = UIColor(red: 230/255, green: 60/255, blue: 0/255, alpha: 1.0)
         }
         else{
-            cell.cash.text = "+ R$\(pessoas[indexPath.item].historico_user["Isabella Slawka"]!),00"
+            cell.cash.text = "+ R$ \(pessoas[indexPath.item].historico_user["Isabella Slawka"]!),00"
             cell.cash.backgroundColor = UIColor(red: 56/255, green: 180/255, blue: 73/255, alpha: 1.0)
         }
     

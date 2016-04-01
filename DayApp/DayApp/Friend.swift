@@ -32,7 +32,7 @@ class Friend: UIViewController{
             saldo.text = "Saldo: + R$ \(cash),00"
         }
         
-        foto.layer.borderWidth = 1.0
+        foto.layer.borderWidth = 4.0
         foto.layer.masksToBounds = false
         foto.layer.borderColor = UIColor.whiteColor().CGColor
         foto.layer.cornerRadius = foto.frame.size.width/2

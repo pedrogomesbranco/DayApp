@@ -18,7 +18,7 @@ class Perfil: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        foto.layer.borderWidth = 1.0
+        foto.layer.borderWidth = 4.0
         foto.layer.masksToBounds = false
         foto.layer.borderColor = UIColor.whiteColor().CGColor
         foto.layer.cornerRadius = foto.frame.size.width/2
