@@ -11,6 +11,8 @@
 		248644B51CAC606A00F71E6E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248644B41CAC606A00F71E6E /* Friend.swift */; };
 		248644B71CAC6C7700F71E6E /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248644B61CAC6C7700F71E6E /* Perfil.swift */; };
 		24C6B2F41CADC4810075CDCC /* SelectFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B2F31CADC4810075CDCC /* SelectFriends.swift */; };
+		24C6B2F61CAEFAEA0075CDCC /* CeuluaTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B2F51CAEFAEA0075CDCC /* CeuluaTable.swift */; };
+		24C6B2F81CAF12DF0075CDCC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B2F71CAF12DF0075CDCC /* ProductViewController.swift */; };
 		EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */; };
 		EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C82051CA9E7BA00A521F2 /* ViewController.swift */; };
 		EB7C82091CA9E7BA00A521F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C82071CA9E7BA00A521F2 /* Main.storyboard */; };
@@ -78,6 +80,8 @@
 		248644B41CAC606A00F71E6E /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		248644B61CAC6C7700F71E6E /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		24C6B2F31CADC4810075CDCC /* SelectFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFriends.swift; sourceTree = "<group>"; };
+		24C6B2F51CAEFAEA0075CDCC /* CeuluaTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeuluaTable.swift; sourceTree = "<group>"; };
+		24C6B2F71CAF12DF0075CDCC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		EB6EC66C1CA9F0A000382DBD /* DayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DayApp.entitlements; sourceTree = "<group>"; };
 		EB7C82001CA9E7BA00A521F2 /* DayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C82031CA9E7BA00A521F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DayApp/AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7C82071CA9E7BA00A521F2 /* Main.storyboard */,
+				24C6B2F71CAF12DF0075CDCC /* ProductViewController.swift */,
 				EB7C820C1CA9E7BA00A521F2 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
@@ -234,6 +239,7 @@
 			children = (
 				EB7C82051CA9E7BA00A521F2 /* ViewController.swift */,
 				248644B41CAC606A00F71E6E /* Friend.swift */,
+				24C6B2F51CAEFAEA0075CDCC /* CeuluaTable.swift */,
 				EB7C82441CA9F96600A521F2 /* RoundedCornersView.swift */,
 				24C6B2F31CADC4810075CDCC /* SelectFriends.swift */,
 				248644B61CAC6C7700F71E6E /* Perfil.swift */,
@@ -385,9 +391,11 @@
 				24C6B2F41CADC4810075CDCC /* SelectFriends.swift in Sources */,
 				248644B71CAC6C7700F71E6E /* Perfil.swift in Sources */,
 				EB7C82061CA9E7BA00A521F2 /* ViewController.swift in Sources */,
+				24C6B2F61CAEFAEA0075CDCC /* CeuluaTable.swift in Sources */,
 				EB7C82041CA9E7BA00A521F2 /* AppDelegate.swift in Sources */,
 				248644B51CAC606A00F71E6E /* Friend.swift in Sources */,
 				EB7C82431CA9ED1300A521F2 /* Cell.swift in Sources */,
+				24C6B2F81CAF12DF0075CDCC /* ProductViewController.swift in Sources */,
 				EB7C82451CA9F96600A521F2 /* RoundedCornersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

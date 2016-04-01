@@ -10,6 +10,7 @@ import UIKit
 
 class SelectFriend: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate{
     
+    @IBOutlet var botao: UIButton!
     @IBOutlet var collection: UICollectionView!
     @IBOutlet var searchBar: UISearchBar!
     
@@ -17,6 +18,14 @@ class SelectFriend: UIViewController, UICollectionViewDataSource, UICollectionVi
     var filtered:[Usuario] = []
     
     var pessoas : [Usuario] = [
+        Usuario(id: 2,nome: "Pedro Velmovitsky", historico_user: ["Isabella Slawka": "-100", "Pedro Gomes": "-20", "Pedro de Sá": "-20", "Rebeca Marques": "45", "Isabelle Pencack": "-30", "Sofia Insua": "-40", "Maysa Tauk": "-40"], foto: UIImage(named:"pedro_v.jpg" )!),
+        Usuario(id: 3,nome: "Pedro Gomes", historico_user: ["Isabella Slawka": "-30", "Pedro Velmovitsky": "20", "Rebeca Marques": "55", "Isabelle Pencack": "30", "Sofia Insua": "-40", "Maysa Tauk": "-30"], foto: UIImage(named:"pedro_g.jpg" )!),
+        Usuario(id: 4,nome: "Pedro De Sá", historico_user: ["Isabella Slawka": "45", "Pedro Velmovitsky": "20", "Karen Mann": "-30", "Isabelle Pencack": "25"], foto: UIImage(named:"pedro_s.jpg" )!),
+        Usuario(id: 5,nome: "Karen Mann", historico_user: ["Isabella Slawka": "20", "Pedro de Sá": "30", "Rebeca Marques": "70", "Sofia Insua": "-45"], foto: UIImage(named:"karen.jpg" )!),
+        Usuario(id: 6, nome: "Rebeca Marques", historico_user: ["Pedro Velmovitsky": "-45", "Pedro Gomes": "-55", "Isabelle Pencack:": "60", "Karen Mann": "-70", "Isabella Slawka": "-20", "Sofia Insua": "25", "Maysa Tauk": "35"], foto: UIImage(named:"rebeca.jpg")!),
+        Usuario(id:7, nome: "Isabelle Pencack", historico_user: ["Rebeca Marques": "-60", "Pedro Gomes": "-30", "Pedro de Sá": "-25", "Pedro Velmovitsky": "30", "Isabelle Penckack": "40", "Isabella Slawka": "-80"], foto: UIImage(named: "isabelle.jpg")!),
+        Usuario(id: 8, nome: "Sofia Insua", historico_user: ["Isabella Slawka": "30", "Pedro Velmovitsky": "40", "Rebeca Marques": "-25", "Pedro Gomes": "40", "Karen Mann": "45"], foto: UIImage(named: "sofia.jpg")!),
+        Usuario(id: 9, nome: "Maysa Tauk", historico_user: ["Isabella Slawka": "30", "Pedro Velmovitsky": "40", "Rebeca Marques": "-25", "Pedro Gomes": "30"], foto: UIImage(named: "maysa.jpg")!),
         Usuario(id: 2,nome: "Pedro Velmovitsky", historico_user: ["Isabella Slawka": "-100", "Pedro Gomes": "-20", "Pedro de Sá": "-20", "Rebeca Marques": "45", "Isabelle Pencack": "-30", "Sofia Insua": "-40", "Maysa Tauk": "-40"], foto: UIImage(named:"pedro_v.jpg" )!),
         Usuario(id: 3,nome: "Pedro Gomes", historico_user: ["Isabella Slawka": "-30", "Pedro Velmovitsky": "20", "Rebeca Marques": "55", "Isabelle Pencack": "30", "Sofia Insua": "-40", "Maysa Tauk": "-30"], foto: UIImage(named:"pedro_g.jpg" )!),
         Usuario(id: 4,nome: "Pedro De Sá", historico_user: ["Isabella Slawka": "45", "Pedro Velmovitsky": "20", "Karen Mann": "-30", "Isabelle Pencack": "25"], foto: UIImage(named:"pedro_s.jpg" )!),
@@ -33,7 +42,6 @@ class SelectFriend: UIViewController, UICollectionViewDataSource, UICollectionVi
         self.collection.dataSource = self
         self.collection.reloadData()
         self.searchBar.delegate = self
-        
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
@@ -104,10 +112,33 @@ class SelectFriend: UIViewController, UICollectionViewDataSource, UICollectionVi
         cell.image.layer.masksToBounds = true
         cell.clipsToBounds = true
         cell.cash.text = cell.name.text
-        cell.name.hidden = true
         
+        if cell.selected == true{
+            cell.check.hidden = false
+        }
+        else{
+            cell.check.hidden = true
+        }
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! Cell
+        if cell.selected == true {
+            cell.check.hidden = false
+        }
+        else{
+            cell.check.hidden = true
+        }
+    }
     
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! Cell
+        if cell.selected == true {
+            cell.check.hidden = false
+        }
+        else{
+            cell.check.hidden = true
+        }
+    }
 }

@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet var homeS: UIImageView!
+    @IBOutlet var eventoS: UIImageView!
+    @IBOutlet var eventos: UIButton!
+    @IBOutlet var home: UIButton!
+    @IBOutlet var table: UITableView!
     @IBOutlet var statusView: UIView!
     @IBOutlet var barrinhaRec: UIImageView!
     @IBOutlet var barrinhaDev: UIImageView!
@@ -46,6 +51,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.table.delegate = self
+        self.table.dataSource = self
+        self.table.hidden = true
+        
+        homeS.hidden = false
+        eventoS.hidden = true
+        
         pessoasTot = pessoas
 
         for p in 0...pessoas.count-1{
@@ -62,7 +74,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let j = Int(pessoasTot[i].historico_user["Isabella Slawka"]!)
             if(j>0){
                 pessoasRec.append(pessoasTot[i])
-                print(pessoasRec)
             }
         }
         
@@ -70,7 +81,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let j = Int(pessoasTot[i].historico_user["Isabella Slawka"]!)
             if(j<0){
                 pessoasDev.append(pessoasTot[i])
-                print(pessoasDev)
             }
         }
         
@@ -177,6 +187,32 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             vc.name = selected.nome
             vc.cash = selected.historico_user["Isabella Slawka"]
         }
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pessoas.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ola") as! CelulaTable
+        cell.nome.text = pessoas[indexPath.row].nome
+        return cell
+    }
+    
+    @IBAction func eventos(sender: AnyObject) {
+        collection.hidden = true
+        statusView.hidden = true
+        table.hidden = false
+        homeS.hidden = true
+        eventoS.hidden = false
+    }
+    
+    @IBAction func home(sender: AnyObject) {
+        collection.hidden = false
+        statusView.hidden = false
+        table.hidden = true
+        homeS.hidden = false
+        eventoS.hidden = true
     }
 }
 

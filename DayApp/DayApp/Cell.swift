@@ -10,6 +10,7 @@ import UIKit
 
 class Cell: UICollectionViewCell {
 
+    @IBOutlet var check: UIImageView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var cash: UILabel!
